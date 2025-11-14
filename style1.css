@@ -36,21 +36,18 @@ header h1{
     color: #ffffff;
 }
 .banner span{
-    font-size: 1.3cm;s
+    font-size: 1.3em;
 }
 nav{
-    background-color: #f4f4f4;
-    width: 100px;
-    
-    margin: 0 auto;
-    position: sticky;
-    padding: 30px 0;
-    top: 70px;
+      background-color: #f4f4f4;
+      max-width: 1200px; 
+      margin: 0 auto;
+      position: sticky;
+      top: 75px;
 }
 nav ul{
-    white-space: nowrap;
-    max-width: 1200px;
-    margin: 0 auto;
+  white-space: nowrap;
+  padding: 30px 0;
 }
 nav li{
     width: 25%;
@@ -59,16 +56,97 @@ nav li{
 }
 nav li a{
     text-decoration: none;
-    color: #4b4b4b;
+     color: #4b4b4b;
 }
-nav li.join{
-    color: #ff6433;
+nav li .join{
+   color: #ff6433;
 }
 main{
-    margin: 64px 0;
+   margin: 64px 0;
 }
-main h1{
+main h2{
     color: #f51717;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 20px 5px;
 }
+main p{
+    color: #4b4b4b;
+    line-height: 28px;
+    font-size: 15px;
+    text-align: center;
+}
+.image{
+    text-align: center;
+    white-space: nowrap;
+    margin: 80px 0;
+}
+main li{
+    display: inline-block;
+    width: 30%;
+    margin: 20px 5%;
+}
+main li img{
+    width: 100%;
+}
+section.today{
+    background-color: #d3d3d3;
+    padding: 60px 20px;
+    text-align: center;
+}
+section h2{
+    font-size: 40px;
+    color: #000000;
+    border: 5 solid white;
+    
+}
+section p{
+    color: #000000;
+    font-size: 16px;
+    line-height: 35px;
+}
+section.today input{
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    text-align: center;
+    font-size: 24px;
+    border: 5px solid white;
+    border-radius: 32px;
+    margin: 20px 0;
+}
+footer{
+    background-color: #f63232;
+    padding: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+footer p{
+    border: 4px dashed white;
+    display: inline-block;
+    border-radius: 16px;
+    padding: 10px 5px;
+}
+/* pseudo class */
+nav li a:hover{
+    text-decoration: underline;
+    background-color: #feb614;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+/* pseudo element */
+main p::first-line{
+    font-size: 2em;
+}
+main li img:hover{
+     position: relative; 
+     top: -4px;
+     cursor: pointer;  
+}
+section.today input:valid{
+    border: 2px green solid;
+}
+
